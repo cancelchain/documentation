@@ -248,6 +248,8 @@ Usage:
 Args:
     :FILE: The file path from which to import the blocks.
 
+A recent `JSON Lines`_ export of the CancelChain block data can always be found at http://blocks.cancelchain.org/cancelchain.jsonl
+
 init
 ^^^^
 
@@ -481,3 +483,5 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _Celery worker server: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#running-the-celery-worker-server
 .. _application: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#application
 .. _email us: contact@cancelchain.org
+.. _JSON Lines: https://jsonlines.org/
+

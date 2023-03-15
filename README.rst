@@ -2,6 +2,7 @@ CancelChain is an open-source python project that implements a custom blockchain
 
 * `Project Home Page`_
 * `Documentation`_
+* `Blockchain JSON Data Download`_
 
 
 Installation
@@ -45,3 +46,4 @@ Usage
 
 .. _Project Home Page: https://cancelchain.org
 .. _Documentation: https://docs.cancelchain.org
+.. _Blockchain JSON Data: http://blocks.cancelchain.org/cancelchain.jsonl

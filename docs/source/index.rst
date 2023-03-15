@@ -13,7 +13,7 @@ Social media users often lack any meaningful stake in their posts because they a
 
 Social media provides no formal and easily quantifiable way to indicate forgiveness.
 
-This project aims to address this impedance mismatch between real, quantifiable sentiment and social media by providing a secure, publicly verifiable blockchain ledger of sentiments on a virtually infinite number of subjects (*approximately* 1,112,064\ :sup:`79`).
+This project aims to address this impedance mismatch between real, quantifiable sentiment and social media by providing a secure, `publicly verifiable blockchain`_ ledger of sentiments on a virtually infinite number of subjects (*approximately* 1,112,064\ :sup:`79`).
 
 
 The Ledger
@@ -73,3 +73,4 @@ If all else fails, `email us`_.
 .. _submit a pull request: https://github.com/cancelchain/cancelchain/pulls
 .. _report an issue: https://github.com/cancelchain/cancelchain/issues
 .. _sock puppet accounts: https://en.wikipedia.org/wiki/Sock_puppet_account
+.. _publicly verifiable blockchain: http://blocks.cancelchain.org/cancelchain.jsonl
