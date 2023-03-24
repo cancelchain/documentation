@@ -97,19 +97,6 @@ No settings are required, but the following have defaults and can be configured 
 
     Default: ``NullCache`` (i.e. no caching)
 
-.. py:data:: CACHE_DIR
-
-    This value can also be set using the optional environment variable ``CC_CACHE_DIR``.
-
-    Default: ``None``
-
-.. py:data:: CACHE_THRESHOLD
-
-    This value can also be set using the optional environment variable ``CC_CACHE_THRESHOLD``.
-
-    Default: ``100``
-
-
 CancelChain
 ^^^^^^^^^^^
 
