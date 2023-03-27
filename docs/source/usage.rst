@@ -44,7 +44,7 @@ The following setting is required:
 
 .. py:data:: SECRET_KEY
 
-    This value can also be set using the optional environment variable ``CC_SECRET_KEY``.
+    This value can also be set using the environment variable ``CC_SECRET_KEY``.
 
 
 Flask SQLAlchemy
@@ -56,7 +56,7 @@ The following setting is required:
 
 .. py:data:: SQLALCHEMY_DATABASE_URI
 
-    This value can also be set using the optional environment variable ``CC_SQLALCHEMY_DATABASE_URI``.
+    This value can also be set using the environment variable ``CC_SQLALCHEMY_DATABASE_URI``.
 
 
 Celery
@@ -70,7 +70,7 @@ The following setting is required to enable asynchronous processing of new block
 
 .. py:data:: CELERY_BROKER_URL
 
-    This value can also be set using the optional environment variable ``CC_CELERY_BROKER_URL``.
+    This value can also be set using the environment variable ``CC_CELERY_BROKER_URL``.
 
     Default: ``None``
 
@@ -89,11 +89,11 @@ Flask Caching
 
 All `Flask Caching Configuration`_ values can be set.
 
-No settings are required, but the following have defaults and can be configured via optional environment variables:
+No settings are required, but the following has a default and can be configured via an environment variable:
 
 .. py:data:: CACHE_TYPE
 
-    This value can also be set using the optional environment variable ``CC_CACHE_TYPE``.
+    This value can also be set using the environment variable ``CC_CACHE_TYPE``.
 
     Default: ``NullCache`` (i.e. no caching)
 
@@ -110,7 +110,7 @@ CancelChain
 
     The ``WALLET_ADDRESS`` should be an address that matches a wallet file (i.e. a `.pem` file) in the :py:data:`WALLET_DIR`. For the nodes to successfully communicate, the ``WALLET_ADDRESS`` must also be in the peer node's :py:data:`MILLER_ADDRESSES`, :py:data:`TRANSACTOR_ADDRESSES`, or :py:data:`READER_ADDRESSES` config lists. In addition, the ``WALLET_ADDRESS`` must have initiated at least one successful transaction so the peer node can access the ``WALLET_ADDRESS``'s public key for use in authentication.
 
-    This value can also be set using the optional environment variable ``CC_PEERS`` with a comma-delimited list of peers.
+    This value can also be set using the environment variable ``CC_PEERS`` with a comma-delimited list of peers.
 
     Default: ``list()``
 
@@ -118,7 +118,7 @@ CancelChain
 
     This node's host URL including wallet address component (see :py:data:`PEERS`). This will be the host URL/wallet address used to perform background processing on the node. In addition, the host URL (sans wallet address) is used to identify the node on the network.
 
-    This value can also be set using the optional environment variable ``CC_NODE_HOST``.
+    This value can also be set using the environment variable ``CC_NODE_HOST``.
 
     Default: ``None``
 
@@ -126,7 +126,7 @@ CancelChain
 
     The timeout in seconds for calls using the API client.
 
-    This value can also be set using the optional environment variable ``CC_API_CLIENT_TIMEOUT``.
+    This value can also be set using the environment variable ``CC_API_CLIENT_TIMEOUT``.
 
     Default: ``10``
 
@@ -134,7 +134,7 @@ CancelChain
 
     A boolean indicating whether processing of incoming blocks and transactions should be handled asychronously.
 
-    This value can also be set using the optional environment variable ``CC_API_ASYNC_PROCESSING`` with values of ``True``, ``true``, ``t``, ``Yes``, ``yes``, or ``y`` indicating ``True``.
+    This value can also be set using the environment variable ``CC_API_ASYNC_PROCESSING`` with values of ``True``, ``true``, ``t``, ``Yes``, ``yes``, or ``y`` indicating ``True``.
 
     Default: ``False``
 
@@ -146,7 +146,7 @@ CancelChain
 
     The default host URL (with optional auth wallet address (see :py:data:`PEERS`)) for CLI commands to use for API calls.
 
-    This value can also be set using the optional environment variable ``CC_DEFAULT_COMMAND_HOST``.
+    This value can also be set using the environment variable ``CC_DEFAULT_COMMAND_HOST``.
 
     Default: ``None``
 
@@ -154,7 +154,7 @@ CancelChain
 
     The directory path where wallet (i.e. `.pem`) files are stored.
 
-    This value can also be set using the optional environment variable ``CC_WALLET_DIR``.
+    This value can also be set using the environment variable ``CC_WALLET_DIR``.
 
     Default: ``None``
 
@@ -162,7 +162,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``ADMIN``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the optional environment variable ``CC_ADMIN_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_ADMIN_ADDRESSES`` with a comma-delimited list of wallet addresses.
 
     Default: ``list()``
 
@@ -170,7 +170,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``MILLER``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the optional environment variable ``CC_MILLER_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_MILLER_ADDRESSES`` with a comma-delimited list of wallet addresses.
 
     Default: ``list()``
 
@@ -178,7 +178,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``TRANSACTOR``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the optional environment variable ``CC_TRANSACTOR_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_TRANSACTOR_ADDRESSES`` with a comma-delimited list of wallet addresses.
 
     Default: ``list()``
 
@@ -186,7 +186,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``READER``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the optional environment variable ``CC_READER_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_READER_ADDRESSES`` with a comma-delimited list of wallet addresses.
 
     Default: ``list()``
 
@@ -471,4 +471,3 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _application: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#application
 .. _email us: contact@cancelchain.org
 .. _JSON Lines: https://jsonlines.org/
-
