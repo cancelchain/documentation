@@ -89,7 +89,7 @@ After the challenge cipher is decrypted using the private key associated with `a
 API Roles
 ^^^^^^^^^
 
-There are four different client API roles that control what API services/methods are authorized for a client of a node. If a client address is assigned to more than one role, the more expansive role will take precendence.
+There are four different client API roles that control what API services/methods are authorized for a client of a node. If a client address is assigned to more than one role, the more expansive role will take precedence.
 
 Reader
 """"""

@@ -21,7 +21,7 @@ Database
 
 :ref:`CancelChain` requires a relational database and uses `Flask SQLAlchemy`_ to interact with it. Any `supported database`_ should work.
 
-New databases must be intialized before running a node or miller using the `init`_ command:
+New databases must be initialized before running a node or miller using the `init`_ command:
 
     .. code:: console
 
@@ -110,7 +110,7 @@ CancelChain
 
     The ``WALLET_ADDRESS`` should be an address that matches a wallet file (i.e. a `.pem` file) in the :py:data:`WALLET_DIR`. For the nodes to successfully communicate, the ``WALLET_ADDRESS`` must also be in the peer node's :py:data:`MILLER_ADDRESSES`, :py:data:`TRANSACTOR_ADDRESSES`, or :py:data:`READER_ADDRESSES` config lists. In addition, the ``WALLET_ADDRESS`` must have initiated at least one successful transaction so the peer node can access the ``WALLET_ADDRESS``'s public key for use in authentication.
 
-    This value can also be set using the environment variable ``CC_PEERS`` with a comma-delimited list of peers.
+    This value can also be set using the environment variable ``CC_PEERS`` with a list of of peers in `JSON array`_ format.
 
     Default: ``list()``
 
@@ -132,7 +132,7 @@ CancelChain
 
 .. py:data:: API_ASYNC_PROCESSING
 
-    A boolean indicating whether processing of incoming blocks and transactions should be handled asychronously.
+    A boolean indicating whether processing of incoming blocks and transactions should be handled asynchronously.
 
     This value can also be set using the environment variable ``CC_API_ASYNC_PROCESSING`` with values of ``True``, ``true``, ``t``, ``Yes``, ``yes``, or ``y`` indicating ``True``.
 
@@ -162,7 +162,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``ADMIN``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the environment variable ``CC_ADMIN_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_ADMIN_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
     Default: ``list()``
 
@@ -170,7 +170,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``MILLER``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the environment variable ``CC_MILLER_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_MILLER_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
     Default: ``list()``
 
@@ -178,7 +178,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``TRANSACTOR``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the environment variable ``CC_TRANSACTOR_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_TRANSACTOR_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
     Default: ``list()``
 
@@ -186,7 +186,7 @@ CancelChain
 
     The list of wallet addresses that when authenticated are granted the role of ``READER``.  See :ref:`API Roles` for more information.
 
-    This value can also be set using the environment variable ``CC_READER_ADDRESSES`` with a comma-delimited list of wallet addresses.
+    This value can also be set using the environment variable ``CC_READER_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
     Default: ``list()``
 
@@ -471,3 +471,4 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _application: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#application
 .. _email us: contact@cancelchain.org
 .. _JSON Lines: https://jsonlines.org/
+.. _JSON array: https://www.w3schools.com/js/js_json_arrays.asp
