@@ -134,7 +134,7 @@ CancelChain
 
     A boolean indicating whether processing of incoming blocks and transactions should be handled asynchronously.
 
-    This value can also be set using the environment variable ``CC_API_ASYNC_PROCESSING`` with values of ``True``, ``true``, ``t``, ``Yes``, ``yes``, or ``y`` indicating ``True``.
+    This value can also be set using the environment variable ``CC_API_ASYNC_PROCESSING`` with a `JSON boolean`_ string (``true`` or ``false``). 
 
     Default: ``False``
 
@@ -472,3 +472,4 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _email us: contact@cancelchain.org
 .. _JSON Lines: https://jsonlines.org/
 .. _JSON array: https://www.w3schools.com/js/js_json_arrays.asp
+.. _JSON boolean: https://json-schema.org/understanding-json-schema/reference/boolean.html
