@@ -235,7 +235,7 @@ Usage:
 Args:
     :FILE: The file path from which to import the blocks.
 
-A recent `JSON Lines`_ export of the CancelChain block data can always be found at http://blocks.cancelchain.org/cancelchain.jsonl
+A recent `JSON Lines`_ export of the CancelChain block data can be downloaded `here`_.
 
 init
 ^^^^
@@ -473,3 +473,4 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _JSON Lines: https://jsonlines.org/
 .. _JSON array: https://www.w3schools.com/js/js_json_arrays.asp
 .. _JSON boolean: https://json-schema.org/understanding-json-schema/reference/boolean.html
+.. _here: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl

@@ -1,13 +1,3 @@
-CancelChain
-###########
-
-CancelChain is an open-source python project that implements a custom blockchain ledger. The ledger protocol allows for the assigning of tokens to subjects (utf-8 strings of less than 80 characters) as indications of either opposition or support. Opposition entries are allowed to be rescinded later. Support is forever.
-
-* `Project Home Page`_
-* `Documentation`_
-* `Blog`_
-
-
 Quick Start
 ===========
 
@@ -28,8 +18,8 @@ Install CancelChain using pip:
 It is recommended that a `python virtual environment`_ is used for `all <https://realpython.com/python-virtual-environments-a-primer/#avoid-system-pollution>`__ `the <https://realpython.com/python-virtual-environments-a-primer/#sidestep-dependency-conflicts>`__ `usual <https://realpython.com/python-virtual-environments-a-primer/#minimize-reproducibility-issues>`__ `reasons <https://realpython.com/python-virtual-environments-a-primer/#dodge-installation-privilege-lockouts>`_.
 
 
-Configuration
--------------
+Sample Configuration
+--------------------
 
 Create a `python-dotenv`_ ``.env`` file. Here is an example minimal configuration:
 
@@ -62,6 +52,7 @@ By default, it is the directory ``$PREFIX/var/cancelchain-instance`` where ``$PR
 
 The following ``cancelchain`` command examples assume that the ``.env`` file is loaded by default.
 
+
 Initialize
 ----------
 
@@ -75,8 +66,8 @@ Create a local database by running the `init command`_:
 The `CC_SQLALCHEMY_DATABASE_URI`_ value in the example configuration above specifies a `SQLite`_ database called ``cc.sqlite`` with a file path relative to the ``cancelchain`` `instance folder`_.
 
 
-Import
-------
+Import Data
+-----------
 
 Download the most recent export of `CancelChain data`_. This `JSON Lines`_ file is updated at every blockchain epoch (2016 blocks or approximately every two weeks).
 
@@ -106,22 +97,22 @@ You run the ``cancelchain`` application by issuing the ``cancelchain run`` comma
 
 Open `http://localhost:5000 <http://localhost:5000>`_ in a browser to explore the local copy of the blockchain.
 
-Home (Current Chain)
-^^^^^^^^^^^^^^^^^^^^
+Home Page (Current Chain)
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: readme-assets/browser-chain.png
+.. image:: static/browser-chain.png
    :width: 500pt
 
-Block
-^^^^^
+Block Page
+^^^^^^^^^^
 
-.. image:: readme-assets/browser-block.png
+.. image:: static/browser-block.png
    :width: 500pt
 
-Transaction
-^^^^^^^^^^^
+Transaction Page
+^^^^^^^^^^^^^^^^
 
-.. image:: readme-assets/browser-txn.png
+.. image:: static/browser-txn.png
    :width: 500pt
 
 Running the ``cancelchain`` application also exposes a number of web service endpoints that comprise the communications layer of the blockchain. See the  `API Documentation`_ for much more information.
@@ -130,7 +121,7 @@ There are also many other ``cancelchain`` commands for interacting with the bloc
 
 
 Joining The CancelChain Network
-===============================
+-------------------------------
 
 The CancelChain is run by a permissioned network of nodes. A CancelChain instance requires `API access`_ to a node in the network in order to have locally milled blocks or submitted transactions propagate to the official CancelChain.
 

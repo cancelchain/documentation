@@ -61,7 +61,7 @@ If all else fails, `email us`_.
     :caption: Documentation
     :hidden:
 
-    install
+    quickstart
     usage
     api
     specs
@@ -73,4 +73,4 @@ If all else fails, `email us`_.
 .. _submit a pull request: https://github.com/cancelchain/cancelchain/pulls
 .. _report an issue: https://github.com/cancelchain/cancelchain/issues
 .. _sock puppet accounts: https://en.wikipedia.org/wiki/Sock_puppet_account
-.. _publicly verifiable blockchain: http://blocks.cancelchain.org/cancelchain.jsonl
+.. _publicly verifiable blockchain: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
