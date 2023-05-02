@@ -160,7 +160,7 @@ CancelChain
 
 .. py:data:: ADMIN_ADDRESSES
 
-    The list of wallet addresses that when authenticated are granted the role of ``ADMIN``.  See :ref:`API Roles` for more information.
+    The list of wallet addresses and/or `regular expressions`_ that when matched and authenticated are granted the role of ``ADMIN``.  See :ref:`API Roles` for more information.
 
     This value can also be set using the environment variable ``CC_ADMIN_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
@@ -168,7 +168,7 @@ CancelChain
 
 .. py:data:: MILLER_ADDRESSES
 
-    The list of wallet addresses that when authenticated are granted the role of ``MILLER``.  See :ref:`API Roles` for more information.
+    The list of wallet addresses and/or `regular expressions`_ that when matched and authenticated are granted the role of ``MILLER``.  See :ref:`API Roles` for more information.
 
     This value can also be set using the environment variable ``CC_MILLER_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
@@ -176,7 +176,7 @@ CancelChain
 
 .. py:data:: TRANSACTOR_ADDRESSES
 
-    The list of wallet addresses that when authenticated are granted the role of ``TRANSACTOR``.  See :ref:`API Roles` for more information.
+    The list of wallet addresses and/or `regular expressions`_ that when matched and authenticated are granted the role of ``TRANSACTOR``.  See :ref:`API Roles` for more information.
 
     This value can also be set using the environment variable ``CC_TRANSACTOR_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
@@ -184,7 +184,7 @@ CancelChain
 
 .. py:data:: READER_ADDRESSES
 
-    The list of wallet addresses that when authenticated are granted the role of ``READER``.  See :ref:`API Roles` for more information.
+    The list of wallet addresses and/or `regular expressions`_ that when matched and authenticated are granted the role of ``READER``.  See :ref:`API Roles` for more information.
 
     This value can also be set using the environment variable ``CC_READER_ADDRESSES`` with a list of wallet addresses in `JSON array`_ format.
 
@@ -474,3 +474,4 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _JSON array: https://www.w3schools.com/js/js_json_arrays.asp
 .. _JSON boolean: https://json-schema.org/understanding-json-schema/reference/boolean.html
 .. _here: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
+.. _regular expressions: https://docs.python.org/3/library/re.html

@@ -98,21 +98,21 @@ Client addresses that belong to the ``READER`` role can call most API services w
 
 By disallowing the ``POST`` methods, clients with the ``READER`` role can not submit transactions or blocks. They can only query data.
 
-Addresses can be assigned the ``READER`` role by adding them to the :py:data:`READER_ADDRESSES` configuration list.
+Addresses can be assigned the ``READER`` role by adding them (or `regular expressions`_ that match the addresses) to the :py:data:`READER_ADDRESSES` configuration list.
 
 Transactor
 """"""""""
 
 Client addresses that belong to the ``TRANSACTOR`` role can call most API services with the ``GET`` method. In addition, this role can ``POST`` new transactions. This is the role that transaction (but not block) generating peers should be assigned to.
 
-Addresses can be assigned to the ``TRANSACTOR`` role by adding them to the :py:data:`TRANSACTOR_ADDRESSES` configuration list.
+Addresses can be assigned to the ``TRANSACTOR`` role by adding them (or `regular expressions`_ that match the addresses) to the :py:data:`TRANSACTOR_ADDRESSES` configuration list.
 
 Miller
 """"""
 
 Client addresses that belong to the ``MILLER`` role can call most API services with either the ``GET`` or ``POST`` methods. This allows the API client to submit transactions and new blocks. This is the role that peer milling clients should be assigned to.
 
-Addresses can be assigned to the ``MILLER`` role by adding them to the :py:data:`MILLER_ADDRESSES` configuration list.
+Addresses can be assigned to the ``MILLER`` role by adding them (or `regular expressions`_ that match the addresses) to the :py:data:`MILLER_ADDRESSES` configuration list.
 
 Admin
 """""
@@ -1023,3 +1023,4 @@ Transaction
 .. _Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750
 .. _RSAES-OAEP: https://datatracker.ietf.org/doc/html/rfc8017#section-7.1
 .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
+.. _regular expressions: https://docs.python.org/3/library/re.html
