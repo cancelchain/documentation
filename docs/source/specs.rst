@@ -20,7 +20,7 @@ Users and their transactions are secured by 2048-bit RSA keys and identified by 
 Hashing is accomplished using `sha512`_ followed by `sha256`_.
 
 
-.. _original bitcoin paper: https://bitcoin.org/bitcoin.pdf
 .. _Base58CHeck: https://en.bitcoin.it/wiki/Base58Check_encoding
-.. _sha512: https://en.wikipedia.org/wiki/SHA-2
+.. _original bitcoin paper: https://bitcoin.org/bitcoin.pdf
 .. _sha256: https://en.wikipedia.org/wiki/SHA-2
+.. _sha512: https://en.wikipedia.org/wiki/SHA-2

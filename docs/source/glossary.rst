@@ -50,5 +50,5 @@ Glossary
         **Unspent Transaction Output**: The ledger model. See `Unspent transaction output`_ for a more formal definition.
 
 
-.. _Unspent transaction output: https://en.wikipedia.org/wiki/Unspent_transaction_output
 .. _Bitcoin transactions: https://en.wikipedia.org/wiki/Bitcoin_network#Transactions
+.. _Unspent transaction output: https://en.wikipedia.org/wiki/Unspent_transaction_output

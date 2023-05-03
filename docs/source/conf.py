@@ -7,7 +7,7 @@ copyright = '2023 Thomas Bohmbach, Jr.'
 author = 'Thomas Bohmbach, Jr.'
 
 release = '1.3'
-version = '1.3.0'
+version = '1.3.2'
 
 # -- General configuration
 

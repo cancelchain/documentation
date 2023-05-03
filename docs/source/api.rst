@@ -1019,8 +1019,8 @@ Transaction
 (Properties in **bold** are required.)
 
 
-.. _JSON Web Token: https://datatracker.ietf.org/doc/html/rfc7519
 .. _Bearer Token: https://datatracker.ietf.org/doc/html/rfc6750
-.. _RSAES-OAEP: https://datatracker.ietf.org/doc/html/rfc8017#section-7.1
 .. _ISO 8601: https://en.wikipedia.org/wiki/ISO_8601
+.. _JSON Web Token: https://datatracker.ietf.org/doc/html/rfc7519
 .. _regular expressions: https://docs.python.org/3/library/re.html
+.. _RSAES-OAEP: https://datatracker.ietf.org/doc/html/rfc8017#section-7.1

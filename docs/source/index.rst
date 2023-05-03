@@ -68,9 +68,9 @@ If all else fails, `email us`_.
     glossary
 
 
-.. _The Cancel Button: https://thecancelbutton.com
 .. _email us: contact@cancelchain.org
-.. _submit a pull request: https://github.com/cancelchain/cancelchain/pulls
+.. _publicly verifiable blockchain: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
 .. _report an issue: https://github.com/cancelchain/cancelchain/issues
 .. _sock puppet accounts: https://en.wikipedia.org/wiki/Sock_puppet_account
-.. _publicly verifiable blockchain: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
+.. _submit a pull request: https://github.com/cancelchain/cancelchain/pulls
+.. _The Cancel Button: https://thecancelbutton.com

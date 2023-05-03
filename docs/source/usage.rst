@@ -33,7 +33,8 @@ Configuration
 :ref:`CancelChain` can be configured like any other Flask_ application including a few custom options:
 
 1. The environment variable :code:`CANCELCHAIN_SETTINGS` can be set to the location of a `python config file`_.
-2. Some settings can be configured from environment variables.
+2. Some settings can be configured from environment variables. In addition, environment variables can be set using a `python-dotenv`_ ``.env`` file. A ``.env`` file is loaded by default if it is located either in the current working directory or in the ``cancelchain`` `instance folder`_. Use the ``--env-file`` parameter to specify an alternate file path when running commands.
+
 
 Flask
 ^^^^^
@@ -453,25 +454,27 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
     CCG is not a cryptocurrency. By design, it has an inflationary, never-decreasing coinbase reward. It also lacks rewards for address-to-address transfers compared to large rewards for other ledger transactions. It is intended to have no value other than being a ticket for creating subject, forgiveness, and support transactions on the blockchain ledger.
 
 
-.. _Flask: https://flask.palletsprojects.com/
-.. _Flask Command Line Interface: https://flask.palletsprojects.com/en/2.1.x/cli/
-.. _python config file: https://flask.palletsprojects.com/en/2.1.x/config/#configuring-from-python-files
-.. _Flask SQLAlchemy: https://flask-sqlalchemy.palletsprojects.com/
-.. _supported database: https://docs.sqlalchemy.org/en/14/dialects/
-.. _Flask Configuration: https://flask.palletsprojects.com/en/2.1.x/config/
-.. _deploying: https://flask.palletsprojects.com/en/2.1.x/deploying/
-.. _running: https://flask.palletsprojects.com/en/2.1.x/cli/#run-the-development-server
-.. _CLI: https://flask.palletsprojects.com/en/2.1.x/cli/
-.. _Flask SQLAlchemy Configuration: https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
-.. _Flask Caching Configuration: https://flask-caching.readthedocs.io/en/latest/#configuring-flask-caching
-.. _Celery Task Queue: https://docs.celeryproject.org/en/stable/index.html
-.. _Celery Configuration: https://docs.celeryq.dev/en/stable/userguide/configuration.html
-.. _Celery Broker: https://docs.celeryq.dev/en/stable/getting-started/backends-and-brokers/index.html
-.. _Celery worker server: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#running-the-celery-worker-server
 .. _application: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#application
+.. _Celery Broker: https://docs.celeryq.dev/en/stable/getting-started/backends-and-brokers/index.html
+.. _Celery Configuration: https://docs.celeryq.dev/en/stable/userguide/configuration.html
+.. _Celery Task Queue: https://docs.celeryproject.org/en/stable/index.html
+.. _Celery worker server: https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#running-the-celery-worker-server
+.. _CLI: https://flask.palletsprojects.com/en/2.1.x/cli/
+.. _deploying: https://flask.palletsprojects.com/en/2.1.x/deploying/
 .. _email us: contact@cancelchain.org
-.. _JSON Lines: https://jsonlines.org/
+.. _Flask Caching Configuration: https://flask-caching.readthedocs.io/en/latest/#configuring-flask-caching
+.. _Flask Command Line Interface: https://flask.palletsprojects.com/en/2.1.x/cli/
+.. _Flask Configuration: https://flask.palletsprojects.com/en/2.1.x/config/
+.. _Flask SQLAlchemy Configuration: https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
+.. _Flask SQLAlchemy: https://flask-sqlalchemy.palletsprojects.com/
+.. _Flask: https://flask.palletsprojects.com/
+.. _here: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
+.. _instance folder: https://flask.palletsprojects.com/en/2.2.x/config/#instance-folders
 .. _JSON array: https://www.w3schools.com/js/js_json_arrays.asp
 .. _JSON boolean: https://json-schema.org/understanding-json-schema/reference/boolean.html
-.. _here: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
+.. _JSON Lines: https://jsonlines.org/
+.. _python config file: https://flask.palletsprojects.com/en/2.1.x/config/#configuring-from-python-files
+.. _python-dotenv: https://pypi.org/project/python-dotenv/
 .. _regular expressions: https://docs.python.org/3/library/re.html
+.. _running: https://flask.palletsprojects.com/en/2.1.x/cli/#run-the-development-server
+.. _supported database: https://docs.sqlalchemy.org/en/14/dialects/
