@@ -33,7 +33,24 @@ Configuration
 :ref:`CancelChain` can be configured like any other Flask_ application including a few custom options:
 
 1. The environment variable :code:`CANCELCHAIN_SETTINGS` can be set to the location of a `python config file`_.
-2. Some settings can be configured from environment variables. In addition, environment variables can be set using a `python-dotenv`_ ``.env`` file. A ``.env`` file is loaded by default if it is located either in the current working directory or in the ``cancelchain`` `instance folder`_. Use the ``--env-file`` parameter to specify an alternate file path when running commands.
+2. Most Flask and CancelChain settings can be configured from environment variables. CancelChain-specific environment variables are prefixed with ``CC_`` and are documented below. All other Flask-specific environment variables are prefixed with ``FLASK_`` and loaded with the built-in flask method, |from_prefixed_env()|_.
+
+
+Dotenv
+^^^^^^
+
+Environment variables can be set using a `python-dotenv`_ ``.env`` file. A ``.env`` file is loaded by default if it is located either in the current working directory or in the `instance folder`_. Use the ``--env-file`` parameter to specify an alternate file path when running commands.
+
+You can find the location of the `instance folder`_ by running the `shell command`_:
+
+.. code-block:: console
+
+  $ cancelchain --env-file path/to/.env shell
+  Python 3.10.11 (main, Apr  8 2023, 14:38:50) [GCC 11.3.0] on linux
+  App: cancelchain
+  Instance: /home/arlo/.pyenv/versions/3.10.11/envs/my-cancelchain/var/cancelchain-instance
+
+By default, it is the directory ``$PREFIX/var/cancelchain-instance`` where ``$PREFIX`` is the prefix of the Python installation.
 
 
 Flask
@@ -45,7 +62,7 @@ The following setting is required:
 
 .. py:data:: SECRET_KEY
 
-    This value can also be set using the environment variable ``CC_SECRET_KEY``.
+    This value can also be set using the environment variable ``FLASK_SECRET_KEY``.
 
 
 Flask SQLAlchemy
@@ -57,7 +74,7 @@ The following setting is required:
 
 .. py:data:: SQLALCHEMY_DATABASE_URI
 
-    This value can also be set using the environment variable ``CC_SQLALCHEMY_DATABASE_URI``.
+    This value can also be set using the environment variable ``FLASK_SQLALCHEMY_DATABASE_URI``.
 
 
 Celery
@@ -71,7 +88,7 @@ The following setting is required to enable asynchronous processing of new block
 
 .. py:data:: CELERY_BROKER_URL
 
-    This value can also be set using the environment variable ``CC_CELERY_BROKER_URL``.
+    This value can also be set using the environment variable ``FLASK_CELERY_BROKER_URL``.
 
     Default: ``None``
 
@@ -94,9 +111,9 @@ No settings are required, but the following has a default and can be configured 
 
 .. py:data:: CACHE_TYPE
 
-    This value can also be set using the environment variable ``CC_CACHE_TYPE``.
+    This value can also be set using the environment variable ``FLASK_CACHE_TYPE``.
 
-    Default: ``NullCache`` (i.e. no caching)
+    Default: ``NullCache`` (i.e. no caching).
 
 CancelChain
 ^^^^^^^^^^^
@@ -468,6 +485,8 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _Flask SQLAlchemy Configuration: https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
 .. _Flask SQLAlchemy: https://flask-sqlalchemy.palletsprojects.com/
 .. _Flask: https://flask.palletsprojects.com/
+.. |from_prefixed_env()| replace:: ``from_prefixed_env()``
+.. _from_prefixed_env(): https://flask.palletsprojects.com/en/2.3.x/api/#flask.Config.from_prefixed_env
 .. _here: https://storage.googleapis.com/blocks.cancelchain.org/cancelchain.jsonl
 .. _instance folder: https://flask.palletsprojects.com/en/2.2.x/config/#instance-folders
 .. _JSON array: https://www.w3schools.com/js/js_json_arrays.asp
@@ -477,4 +496,5 @@ The :ref:`CancelChain` block milling is performed by a permissioned (i.e. privat
 .. _python-dotenv: https://pypi.org/project/python-dotenv/
 .. _regular expressions: https://docs.python.org/3/library/re.html
 .. _running: https://flask.palletsprojects.com/en/2.1.x/cli/#run-the-development-server
+.. _shell command: https://flask.palletsprojects.com/en/2.2.x/cli/#open-a-shell
 .. _supported database: https://docs.sqlalchemy.org/en/14/dialects/
